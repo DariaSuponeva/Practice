@@ -1,3 +1,7 @@
+package com.lab.customer;
+
+import com.lab.bank.BankAccount;
+
 // Класс Customer представляет клиента банка
 public class Customer {
     private String name;

@@ -1,4 +1,4 @@
-package bank;
+package com.lab.bank;
 
 // Класс BankAccount представляет банковский счет
 public class BankAccount {
