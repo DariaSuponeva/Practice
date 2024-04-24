@@ -20,6 +20,10 @@ public class BankAccount {
         return balance;
     }
 
+    public boolean checkLocked() {
+        return isLocked;
+    }
+
     // Метод для блокировки счета
     public void lockAccount() {
         isLocked = true;
@@ -30,7 +34,7 @@ public class BankAccount {
     public void unlockAccount() {
         isLocked = false;
         System.out.println("Account " + accountNumber + " is unlocked.");
-    }
+    }    
 
     public void deposit(double amount) {
         if (!isLocked) {
