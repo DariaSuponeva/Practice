@@ -1,3 +1,5 @@
+package com.lab.bank;
+
 // Класс Bank представляет банк
 public class Bank {
     private String name;

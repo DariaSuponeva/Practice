@@ -1,3 +1,9 @@
+package com.lab.main;
+
+import com.lab.bank.Bank;
+import com.lab.bank.BankAccount;
+import com.lab.customer.Customer;
+
 /* Написать программу для работы с банковскими счетами.
 Программа должна позволять создавать новые счета, вносить и снимать деньги со счета,
 а также показывать информацию о балансе счетов.*/
@@ -14,6 +20,9 @@ public class Main {
 
         customer.getAccount().deposit(500);
         customer.getAccount().withdraw(200);
+        customer.getAccount().lockAccount();
+        customer.getAccount().deposit(10000);
+        customer.getAccount().unlockAccount();
         customer.getAccount().withdraw(2000);
     }
 }
