@@ -14,7 +14,8 @@ public class Main {
         Customer customer = new Customer("Alice", account, 0);
 
         System.out.println("Welcome to " + bank.getName() + "!");
-        System.out.println("Customer " + customer.getName() + " has account number " + customer.getAccount().getAccountNumber() +
+        System.out.println("Customer " + customer.getName() + " has account number " +
+                customer.getAccount().getAccountNumber() +
                 " with balance " + customer.getAccount().getBalance() + " USD");
         System.out.println("Customer credit rating is " + customer.getCreditRating());
 
