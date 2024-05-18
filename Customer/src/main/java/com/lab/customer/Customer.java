@@ -7,11 +7,13 @@ public class Customer {
     private String name;
     private BankAccount account;
     private int creditRating;
+    private int age;
 
-    public Customer(String name, BankAccount account, int creditRating) {
+    public Customer(String name, BankAccount account, int creditRating, int age) {
         this.name = name;
         this.account = account;
         this.creditRating = creditRating;
+        this.age = age;
     }
 
     public String getName() {
@@ -23,4 +25,7 @@ public class Customer {
     }
 
     public int  getCreditRating() { return creditRating; }
+    public int  getAge() { return age; }
+
+
 }

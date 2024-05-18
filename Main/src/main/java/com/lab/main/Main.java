@@ -11,12 +11,12 @@ public class Main {
     public static void main(String[] args) {
         Bank bank = new Bank("MyBank");
         BankAccount account = new BankAccount(123456789, 1000);
-        Customer customer = new Customer("Alice", account, 0);
+        Customer customer = new Customer("Alice", account, 0, 20);
 
         System.out.println("Welcome to " + bank.getName() + "!");
         System.out.println("Customer " + customer.getName() + " has account number " +
                 customer.getAccount().getAccountNumber() +
-                " with balance " + customer.getAccount().getBalance() + " USD");
+                " with balance " + customer.getAccount().getBalance() + " USD" + ", age = " + customer.getAge());
         System.out.println("Customer credit rating is " + customer.getCreditRating());
 
         customer.getAccount().deposit(500);
