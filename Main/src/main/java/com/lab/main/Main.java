@@ -11,7 +11,7 @@ public class Main {
     public static void main(String[] args) {
         Bank bank = new Bank("MyBank");
         BankAccount account = new BankAccount(123456789, 1000);
-        Customer customer = new Customer("Alice", account, 0, 20);
+        Customer customer = new Customer("Alice", account, 0, 20, "123");
 
         System.out.println("Welcome to " + bank.getName() + "!");
         System.out.println("Customer " + customer.getName() + " has account number " +

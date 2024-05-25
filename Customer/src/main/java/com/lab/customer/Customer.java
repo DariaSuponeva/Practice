@@ -8,8 +8,9 @@ public class Customer {
     private BankAccount account;
     private int creditRating;
     private int age;
+    private String number;
 
-    public Customer(String name, BankAccount account, int creditRating, int age) {
+    public Customer(String name, BankAccount account, int creditRating, int age, String number) {
         this.name = name;
         this.account = account;
         this.creditRating = creditRating;
@@ -27,5 +28,6 @@ public class Customer {
     public int  getCreditRating() { return creditRating; }
     public int  getAge() { return age; }
 
+    public String  getNumber() { return number; }
 
 }
